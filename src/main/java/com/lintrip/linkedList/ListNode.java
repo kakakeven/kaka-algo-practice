@@ -4,11 +4,23 @@ package com.lintrip.linkedList;
  * 单链表
  */
 public class ListNode {
-    int val;
-    ListNode next;
 
-    ListNode(int x) {
+    public int val;
+    public ListNode next;
+
+    public ListNode(int x) {
         val = x;
-        next =  null;
+    }
+
+    public String toString() {
+//        StringBuilder sb = new StringBuilder("");
+//        ListNode p = this;
+//        sb.append(p.val);
+//        while (p.next != null) {
+//            sb.append("->");
+//            sb.append(p.next.val);
+//            p.next = p.next.next;
+//        }
+//        return sb.toString();
     }
 }
