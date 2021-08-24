@@ -13,14 +13,14 @@ public class ListNode {
     }
 
     public String toString() {
-//        StringBuilder sb = new StringBuilder("");
-//        ListNode p = this;
-//        sb.append(p.val);
-//        while (p.next != null) {
-//            sb.append("->");
-//            sb.append(p.next.val);
-//            p.next = p.next.next;
-//        }
-//        return sb.toString();
+        StringBuilder sb = new StringBuilder("");
+        ListNode p = this;
+        sb.append(p.val);
+        while (p.next != null) {
+            sb.append("->");
+            sb.append(p.next.val);
+            p.next = p.next.next;
+        }
+        return sb.toString();
     }
 }
