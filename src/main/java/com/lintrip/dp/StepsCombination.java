@@ -5,6 +5,7 @@ public class StepsCombination {
     public static void main(String[] args) {
         int n = 5;
         int rcount = rCountSteps(n);
+
         System.out.println(rcount);
         int count = countSteps(n);
         System.out.println(count);

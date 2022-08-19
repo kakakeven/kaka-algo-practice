@@ -10,10 +10,19 @@ import com.lintrip.linkedList.ListNode;
  */
 public class ArrayUtil {
 
+    public static int[] splitToIntArray(String nums) {
+        String[] numStrArray = nums.split(",");
+        int[] numsArray = new int[numStrArray.length];
+        for (int i = 0; i < numStrArray.length; i++) {
+            numsArray[i] = Integer.parseInt(numStrArray[i]);
+        }
+        return numsArray;
+    }
+
     public static ListNode convertToListNode(int[] array) {
         ListNode listNode = new ListNode(-1);
         ListNode p = listNode;
-        for (int i = 0;i< array.length;i++) {
+        for (int i = 0; i < array.length; i++) {
             int value = array[i];
             ListNode newNode = new ListNode(value);
             p.next = newNode;
