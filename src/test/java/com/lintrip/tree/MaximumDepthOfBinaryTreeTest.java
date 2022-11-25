@@ -5,13 +5,13 @@ import org.junit.Test;
 
 public class MaximumDepthOfBinaryTreeTest {
 
-    MaximumDepthOfBinaryTree solution;
+    BM28MaximumDepth solution;
 
     TreeNode treeNode;
 
     @Before
     public void setUp() throws Exception {
-        solution = new MaximumDepthOfBinaryTree();
+        solution = new BM28MaximumDepth();
         treeNode = new TreeNode(3);
         treeNode.left = new TreeNode(4);
         treeNode.left.left = new TreeNode(5);
@@ -21,7 +21,7 @@ public class MaximumDepthOfBinaryTreeTest {
 
     @Test
     public void solution() {
-        int depth = solution.solution(treeNode);
+        int depth = solution.maxDepth(treeNode);
         System.out.println(depth);
     }
 }
